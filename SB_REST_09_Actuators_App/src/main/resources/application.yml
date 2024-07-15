@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: SB_REST_09_Actuators_App
+
+server:
+  port: 9090
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+
+  endpoint:
+    shutdown:
+      enabled: true
+
